@@ -1,0 +1,42 @@
+{
+  "dependencies": {
+    "@hapi/joi": "^17.1.1",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "chai": "^4.3.6",
+    "faker": "^5.5.3",
+    "faker-br": "^0.4.1",
+    "fs": "^0.0.1-security",
+    "mochawesome-uirecorder": "^1.5.11",
+    "supertest": "^6.3.1",
+    "ts-node": "^10.9.1"
+  },
+  "name": "supertest",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "test-reporter": "mocha test --reporter mochawesome",
+    "schema": "mocha ./test/schemas/posts/posts.js --reporter mochawesome",
+    "test-schema": "mocha --opts test/schemas/mocha.opts test/schemas/**/*.js",
+        "test-reportera": "mocha test --reporter mochawesome --reporter-options reportDir=customReportDir,reportName=customReportName,reportTitle=customReportTitle,inlineAssets=true"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "joi": "^14.3.1",
+    "joi-assert": "^0.0.3",
+    "mocha": "^6.0.2",
+    "mochawesome": "^3.1.1"
+  },
+  "mocha": {
+    "spec": [
+      "src/tests/**/*.ts"
+    ],
+    "require": [
+      "ts-node/register"
+    ]
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2022-10-26T21:23:14.601Z",
+    "end": "2022-10-26T21:23:14.732Z",
+    "duration": 131,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false,
+    "passPercentClass": "danger",
+    "pendingPercentClass": "danger"
+  },
+  "suites": {
+    "uuid": "f6d2d35b-910e-4a85-996f-a57d4000499d",
+    "title": "",
+    "fullFile": "",
+    "file": "",
+    "beforeHooks": [],
+    "afterHooks": [],
+    "tests": [],
+    "suites": [
+      {
+        "uuid": "68306bcb-9c18-4641-8e37-b05e32db8593",
+        "title": "GET /posts",
+        "fullFile": "C:\\Users\\jose.ramalho\\Desktop\\SuperTest\\test\\schemas\\posts\\posts.js",
+        "file": "\\test\\schemas\\posts\\posts.js",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [
+          {
+            "title": "Deve validar o schema de uma lista de posts",
+            "fullTitle": "GET /posts Deve validar o schema de uma lista de posts",
+            "timedOut": false,
+            "duration": 0,
+            "state": "failed",
+            "pass": false,
+            "fail": true,
+            "pending": false,
+            "code": "var postsList = Joi.object().keys({\n  nomeSistema: Joi.string(),\n  tokenSessao: Joi.string() });\nrequest.post(\"/api/Login\")\n//.expect('Content-Type', /json/)\n.expect(200).end(function (err, res) {\n  joiAssert(res.body, postsList);\n  done(res);\n});",
+            "err": {
+              "message": "AssertionError: object: \"\" is not allowed",
+              "estack": "AssertionError: object: \"\" is not allowed\n    at Test.<anonymous> (posts.js:16:9)\n    at Test.assert (node_modules\\supertest\\lib\\test.js:172:8)\n    at localAssert (node_modules\\supertest\\lib\\test.js:120:14)\n    at fn (node_modules\\supertest\\lib\\test.js:125:7)\n    at Test.callback (node_modules\\superagent\\src\\node\\index.js:924:3)\n    at fn (node_modules\\superagent\\src\\node\\index.js:1153:18)\n    at IncomingMessage.<anonymous> (node_modules\\superagent\\src\\node\\parsers\\json.js:19:7)\n    at IncomingMessage.emit (node:events:525:35)\n    at IncomingMessage.emit (node:domain:489:12)\n    at endReadableNT (node:internal/streams/readable:1358:12)\n    at processTicksAndRejections (node:internal/process/task_queues:83:21)"
+            },
+            "isRoot": false,
+            "uuid": "fd1a8d7b-97f8-4c8c-a2d2-dd62ff559848",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [],
+        "failures": [
+          "fd1a8d7b-97f8-4c8c-a2d2-dd62ff559848"
+        ],
+        "pending": [],
+        "skipped": [],
+        "duration": null,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 20000
+      }
+    ],
+    "passes": [],
+    "failures": [],
+    "pending": [],
+    "skipped": [],
+    "duration": 0,
+    "root": true,
+    "rootEmpty": true,
+    "_timeout": 20000
+  },
+  "copyrightYear": 2022
+}

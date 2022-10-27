@@ -1,0 +1,28 @@
+{
+ "transactionId": "100-022-2022299-19681-152555407",
+ "operationId": 1,
+ "status": 3,
+ "message": "AUTHORIZED",
+ "order": {
+  "reference": "19681",
+  "currency": "BRL",
+  "totalAmount": "15",
+  "dateTime": "2022-10-26T15:25:55.4072953-03:00"
+ },
+ "processors": {
+  "processor": {
+   "flag": "mastercard",
+   "cardNumber": null,
+   "amount": "15",
+   "numberOfPayments": "1",
+   "acquirerId": "1",
+   "originalTransactionID": "61e6cf46-3986-49d7-a5c4-534ff498a4b9",
+   "auth": "915360",
+   "referencia": "205693",
+   "responseCode": "4",
+   "descriptionResponse": "APPROVED",
+   "transactionID": "1026032556244"
+  },
+  "antifraud": null
+ }
+}

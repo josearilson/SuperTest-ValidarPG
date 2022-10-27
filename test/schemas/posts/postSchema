@@ -1,0 +1,41 @@
+
+const schema = Joi.object(
+  {
+    "definitions": {},
+    "$schema": "http://json-schema.org/draft-07/schema#", 
+    "$id": "https://example.com/object1663885380.json", 
+    "title": "Root", 
+    "type": "object",
+    "required": [
+      "nomeSistema",
+      "tokenSessao"
+    ],
+    "properties": {
+      "nomeSistema": {
+        "$id": "#root/nomeSistema", 
+        "title": "Nomesistema", 
+        "type": "string",
+        "default": "",
+        "examples": [
+          "ClaroEcommerceTeste"
+        ],
+        "pattern": "^.*$"
+      },
+      "tokenSessao": {
+        "$id": "#root/tokenSessao", 
+        "title": "Tokensessao", 
+        "type": "string",
+        "default": "",
+        "examples": [
+          ""
+        ],
+        "pattern": "^.*$"
+      }
+    }
+  }
+  
+);
+
+
+
+module.exports = { schema };
