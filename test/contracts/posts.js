@@ -8,8 +8,8 @@ describe('Contract testing of endpoint /products', () => {
     request(baseUrl)
       .post('/api/Login')
       .send({
-        servico: 'ClaroEcommerce5',
-        senha: '$81oA9-jp?0$0j5X',
+        servico: 'xxxxxxxxxxx',
+        senha: 'xxxxxxxxxxx',
       })      
       .end((err, res) => {
         schema.validate(res.body[6]);
